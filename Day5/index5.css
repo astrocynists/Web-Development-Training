@@ -1,0 +1,59 @@
+.parent{
+    height: 100vh;
+    background-color:black;
+}
+.box1{
+    background-color: lightgray;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    height: 250px;
+    width: 250px;
+}
+.box2{
+    background-color: lightpink;
+    height: 250px;
+    width:  250px;
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+}
+.box3{
+    background-color: burlywood;
+    height: 250px;
+    width: 250px;
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+}
+.box4{
+    background-color: aqua;
+    height: 250px;
+    width: 250px;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+.circle{
+    position: sticky;
+    top: 20px;
+    left: 20px;
+    background-color: royalblue;
+    height: 250px;
+    width: 250px;
+    border-radius: 50%;
+}
+p{
+    color: darkorchid;
+    font-size: 50px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.img1{
+    border-radius: 50%;
+    height: 250px;
+    width: 250px;
+}
+img{
+    height: 250px;
+    width: 250px;
+}

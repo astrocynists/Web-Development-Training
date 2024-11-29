@@ -1,0 +1,19 @@
+.parent{
+    background-color: black;
+    height: 100vh;
+}
+.only1{
+    background-color: grey;
+    height: 500px;
+    width: 500px;
+    font: color black;
+    font-size: 35px;
+    position: absolute;
+
+}
+.parent div:hover{
+    transform: translate(1000px, 1000px) rotate(1000deg) skew(1000deg);
+    transition: 4s;
+
+
+}

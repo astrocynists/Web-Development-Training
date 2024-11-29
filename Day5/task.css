@@ -1,0 +1,65 @@
+.parent{
+    background-color: black;
+    height: 100vh;
+}
+.child1{
+    background-color: red;
+    height: 250px;
+    width: 250px;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+}
+.child2{
+    background-color: aqua;
+    height: 250px;
+    width: 250px;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+.child3{
+    background-color: magenta;
+    height: 250px;
+    width: 250px;
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+}
+.child4{
+    background-color: pink;
+    height: 250px;
+    width: 250px;
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+}
+.child5{background-color: rgb(130, 10, 30);
+    height: 350px;
+    width: 350px;
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    border-radius: 50%;
+}
+.child6{
+    background-color: rgb(12, 138, 27);
+    height: 350px;
+    width: 350px;
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    border-radius: 50%;
+}
+@media (max-width:1080px){
+    .parent div{
+        height: 300px;
+        width: 300px;
+    }
+@media (max-width:480px){
+    .parent div{
+        height: 200px;
+        width: 200px;
+    }
+    }    
+}
