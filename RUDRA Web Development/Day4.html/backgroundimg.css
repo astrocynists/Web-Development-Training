@@ -1,0 +1,23 @@
+body{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: large;
+    font-style: bold;
+    background-image: url(https://images.pexels.com/photos/73871/rocket-launch-rocket-take-off-nasa-73871.jpeg);
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+h1{
+    font-size: 100px;
+    align-items: center;
+}
+hr{
+    width: 2500px;
+    align-items: center;
+
+}
+p{
+    color: white;
+    width: 1000px;
+    font-size: 30px;
+}
+
