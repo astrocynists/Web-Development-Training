@@ -1,0 +1,61 @@
+.parent{
+    background-color: royalblue;
+    width: 100vh;
+    height: 100vh;
+}
+.child1{
+    background-color: black;
+    height: 350px;
+    width: 1360px;
+/* position: absolute; */    
+    top: 30px;
+    left: 30px;
+}
+.hi{
+    background-color: white;
+    width: 150px;
+    height: 150px;
+    /* position: absolute; */
+    top: 90px;
+    left: 60px;
+}
+.hello{
+    background-color: white;
+    width: 150px;
+    height: 150px;
+    /* position: absolute; */
+    top: 90px;
+    left: 350px;
+}
+.world{
+    background-color: white;
+    width: 500px;
+    height: 75px;
+    /* position: absolute; */
+    top: 90px;
+    right: 150px;
+}
+.thats{
+    background-color: white;
+    width: 500px;
+    height: 75px;
+    /* position: absolute; */
+    top: 175px;
+    right: 150px;
+}
+.child2{
+    background-color: red;
+    height: 900px;
+    width: 600px;
+    /* position: absolute; */
+    bottom: 50px;
+    left: 30px;
+}
+.child3{
+    background-color: yellowgreen;
+    height: 500px;
+    width: 500px;
+    /* position: absolute; */
+    top: 500px;
+    right: 50px;
+}
