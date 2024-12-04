@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .owo{
+            background-color: black;
+            height: 600px;
+            width: 600px;
+            color: pink;
+            border-radius: 20%;
+            padding: 100px;
+        }
+    </style>
+</head>
+<body>
+    
+    <!-- <h1>My name is <span id="name" > Rudra Kumar</span></h1>
+    <button onclick="changeName()">Change your Name</button>
+
+    <script>
+        const changeName=()=>{
+            const name = prompt("Enter your name")
+            document.getElementById("name").innerHTML = name
+        }
+    </script> -->
+    <!-- task 6 -->
+    <!-- create a div and a button inside it. when button is clicked, the div should change color to black-->
+     <div class="owo">
+        <h1 >Press the button</h1>
+        <button onclick="yourname()">What is your name?</button>
+        <h2 id="name"></h2>
+     </div>
+     <script>
+        const yourname = () =>{
+            const name = prompt("Enter your name")
+            document.getElementById("name").innerHTML = name
+        }
+     </script>
+     
+</body>
+</html>
