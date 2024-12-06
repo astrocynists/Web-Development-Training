@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .chcekAge {
+            text-align: center;
+            margin-top: 50px;
+        }
+
+        .Bulb {
+            height: 400px;
+            width: 400px;
+            border-radius: 50%;
+            background-color: black;
+            padding: 20px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            transition: background-color 0.3s ease;
+        }
+
+        button {
+            font-size: 16px;
+            padding: 10px 20px;
+            cursor: pointer;
+        }
+
+        .on {
+            background-color: yellow;
+        }
+
+        .on1 {
+            background-color: pink;
+        }
+    </style>
+</head>
+<body>
+    <div class="chcekAge">
+        <h1 id="check">Check your Eligibility</h1>
+        <button onclick="checkAge()">Check your Age</button>
+    </div>
+
+    <div class="Bulb" id="lightBulb">
+        <button onclick="changeColor()">Light Switch</button> 
+    </div>
+
+    <script>
+        const checkAge = () => {
+            let age = window.prompt("Please enter your age: ");
+            let check = document.getElementById("check");
+            if (age >= 18) {
+                check.textContent = "You are Eligible to vote";
+            } else {
+                check.textContent = "You are not Eligible to vote";
+            }
+        };
+
+        let isOn = false;
+
+        const changeColor = () => {
+            let bulb = document.getElementById("lightBulb");
+
+            if (isOn) {
+                bulb.classList.remove("on");
+                bulb.classList.add("on1");
+            } else {
+                bulb.classList.remove("on1");
+                bulb.classList.add("on");
+            }
+
+            isOn = !isOn;
+        };
+    </script>
+</body>
+</html>

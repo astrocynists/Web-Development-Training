@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+    <title>Document</title>
+    <style>
+        form{
+            background-color: black;
+            color: white;
+            padding: 100px;
+            height: 100vh;
+            text-align: center;
+        }
+        h1{
+            font-size: 70px;
+        }
+        label{
+            font-size: 30px;
+        }
+        input{
+            height: 30px;
+            width: 250px;
+            box-shadow: 10px;
+        }
+        button{
+            background-color: black;
+            color:white;
+            border-color: white;
+        }
+    </style>
+</head>
+<body>
+    <form action="">
+        <h1>This is Form Validation</h1>
+        <label for="">Username</label><br>
+        <input type="text" id="username" name="username" required><br><br>
+        <label for="">Email</label><br>
+        <input type="email" id="email" name="email" required><br><br>
+        <label for="">Password</label><br>
+        <input type="text" id="password" name="password" required><br><br>
+        <label for="">Confirm Password</label><br>
+        <input type="text" id="confirm_password" name="confirm_password" required><br><br>
+        <button type="submit" onclick="submitform()">Submit</button>
+    </form>
+    <script>
+        const submitform=()=>{
+            let username=document.getElementById("username").value
+            let password=document.getElementById("password").value
+            let confirm_password=document.getElementById("confirm_password").value
+            console.log("Check the form")
+            if(!username||!forward||!confirm_password){
+                window.alert("Please fill all the fields")
+                return
+            }
+            if(validdateEmail(email)){
+                window.alert("Please enter a valid email")
+            }
+            if(password.length<6){
+                window.alert("Password must be 6 letters long")
+                return
+            }
+            if(password !==confirm_password){
+                window.alert("Password is not same, Re-enter the password")
+            } else{
+                window.alert("Form submitted successfully")
+            }
+        }
+    </script>
+</body>
+</html>

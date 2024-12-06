@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .Bulb{
+            height: 400px;
+            width: 400px;
+            border-radius: 50%;
+            background-color: black;
+            padding: 100px;
+            position: absolute;
+            right: 600px;
+            justify-content: center;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="chcekAge">
+        <h1 id="check">Check your Eligibility</h1>
+        <button onclick="checkAge()">Chcek your Age</button>
+    </div>
+    <script>
+        const checkAge = () => {
+            let age=window.prompt("Please enter your age: ")
+            let chcek=document.getElementById("check")
+            if(age>=18){
+                check.textContent="You are Eligible to vote"
+        }
+        else{
+            check.innerHTML="You are not Eligible to vote"
+        }
+    }    
+    </script>
+    <div class="Bulb">
+        <div id="lightBulb">
+            <button onclick="changeColor()">Light switch</button> 
+        </div>
+
+    </div>
+</body>
+</html>

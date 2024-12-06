@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            background-color: grey;
+        }
+    </style>
+</head>
+<body>
+    <div class="section">
+        <h1 id="IdSelector" class="classSelector">HELLO, WORLD</h1>
+        <button onclick="IdSelector()">Use ID</button>
+        <button onclick="classSelector()">Use Class</button>
+        <button onclick="querySelectorTwo()">Use Query</button>
+    </div>
+    <script>
+        const IdSelector = () => {
+            let element = document.getElementById("IdSelector");
+            console.log(element);
+            element.innerHTML = "This is Rudra and I am using ID Selector";
+        }
+
+        const classSelector = () => {
+            let element = document.getElementsByClassName("classSelector")[0];
+            element.innerHTML = "This is Rudra and I am using Class Selector";
+        }
+
+        const querySelectorTwo = () => {
+            document.querySelector("#IdSelector").innerHTML = "This is Rudra and I am using Query Selector";
+        }
+    </script>
+</body>
+</html>

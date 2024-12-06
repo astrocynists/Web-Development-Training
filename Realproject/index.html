@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sangam - Indian Music Culture</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <div class="logo">
+      <h1>Sangam</h1>
+      <p>A journey through Indian Music Culture</p>
+    </div>
+  </header>
+
+  <nav>
+    <ul>
+      <li><a href="#home">Home</a></li>
+      <li><a href="#genres">Genres</a></li>
+      <li><a href="#artists">Artists</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <section id="home" class="section">
+    <h2>Welcome to Sangam</h2>
+    <p>Explore the rich and diverse world of Indian music. From classical ragas to modern Bollywood tunes, we celebrate the soul of India through its musical traditions.</p>
+    <button onclick="showAlert()">Learn More</button>
+  </section>
+
+  <section id="genres" class="section">
+    <h2>Indian Music Genres</h2>
+    <div class="genres">
+      <div class="genre-card">
+        <h3>Classical</h3>
+        <p>Rooted in ancient traditions, Classical music forms the foundation of Indian musical culture.</p>
+      </div>
+      <div class="genre-card">
+        <h3>Bollywood</h3>
+        <p>Popular music from India's film industry, blending various genres with catchy beats.</p>
+      </div>
+      <div class="genre-card">
+        <h3>Folk</h3>
+        <p>Music that expresses the heart of Indian villages and regional cultures.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="artists" class="section">
+    <h2>Famous Indian Artists</h2>
+    <ul class="artist-list">
+      <li>Ravi Shankar</li>
+      <li>Lata Mangeshkar</li>
+      <li>A. R. Rahman</li>
+      <li>Rahat Fateh Ali Khan</li>
+    </ul>
+  </section>
+
+  <section id="contact" class="section">
+    <h2>Contact Us</h2>
+    <form>
+      <input type="text" placeholder="Your Name" required>
+      <input type="email" placeholder="Your Email" required>
+      <textarea placeholder="Your Message" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>&copy; 2024 Sangam - All Rights Reserved</p>
+  </footer>
+
+  <script>
+    function showAlert() {
+    alert("Welcome to Sangam! Dive deeper into the world of Indian music and explore various genres, artists, and more!");
+    }
+
+  </script>
+</body>
+</html>

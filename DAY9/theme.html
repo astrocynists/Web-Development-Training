@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Light/Dark Theme Toggle</title>
+    <link id="themeStylesheet" rel="stylesheet" href="light-theme.css">
+</head>
+<style>
+    body {
+    background-color: white;
+    color: black;
+}
+
+.container {
+    text-align: center;
+    padding: 50px;
+}
+body {
+    background-color: black;
+    color: white;
+}
+
+.container {
+    text-align: center;
+    padding: 50px;
+}
+</style>
+<body>
+    <div class="container">
+        <h1>Welcome to My Website</h1>
+        <p>This is a simple example of a light/dark theme toggle.</p>
+        <button id="themeToggle">Switch to Dark Theme</button>
+    </div>
+
+    <script>
+        const themeToggleButton = document.getElementById('themeToggle');
+        const themeStylesheet = document.getElementById('themeStylesheet');
+
+        themeToggleButton.addEventListener('click', () => {
+        if (themeStylesheet.getAttribute('href') === 'light-theme.css') {
+        themeStylesheet.setAttribute('href', 'dark-theme.css');
+        themeToggleButton.textContent = 'Switch to Light Theme';
+        } else {
+        themeStylesheet.setAttribute('href', 'light-theme.css');
+        themeToggleButton.textContent = 'Switch to Dark Theme';
+    }
+});
+    </script>
+</body>
+</html>
